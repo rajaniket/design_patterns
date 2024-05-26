@@ -1,6 +1,6 @@
-// 1. Define abstract Button
 // ignore_for_file: dead_code
 
+// 1. Define abstract Button
 abstract class Button {
   void render();
 }
@@ -46,7 +46,7 @@ abstract class ButtonFactory {
 
 // 4. Define Concrete factories that produce the platform-specific buttons.
 
-// Material Button Factory
+// Concrete Factory - Material Button Factory
 class MaterialButtonFactory implements ButtonFactory {
   @override
   Button createElevatedButton() {
@@ -59,7 +59,7 @@ class MaterialButtonFactory implements ButtonFactory {
   }
 }
 
-// Cupertino Button Factory
+// Concrete Factory - Cupertino Button Factory
 class CupertinoButtonFactory implements ButtonFactory {
   @override
   Button createElevatedButton() {
