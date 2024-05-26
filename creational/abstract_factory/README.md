@@ -56,20 +56,20 @@ class CupertinoElevatedButton implements Button {
 ### 3. Abstract Factories
 Define an interface for the factory, specifying methods for creating each type of product, such as Flat and Elevated buttons. This abstract factory establishes guidelines for the factory to produce products as needed.
 
-dart
-Copy code
+```dart
 // Define Abstract Factories that create those buttons.
 abstract class ButtonFactory {
   Button createFlatButton();
   Button createElevatedButton();
 }
+```
 
 ### 4. Concrete Factories
 Implement concrete factory classes that implement the abstract factory interface. It provides the logic for creating instances of concrete products.
 It's like specialized factories that produce different styles of the same kind of products. For instance, one factory makes buttons that look like Cupertino buttons and another factory makes buttons that look like Material buttons.
 
 ```dart
-// Material Button Factory
+// Concrete Factory - Material Button Factory
 class MaterialButtonFactory implements ButtonFactory {
   @override
   Button createElevatedButton() {
@@ -83,7 +83,7 @@ class MaterialButtonFactory implements ButtonFactory {
 }
 
 
-// Cupertino Button Factory
+// Concrete Factory - Cupertino Button Factory
 class CupertinoButtonFactory implements ButtonFactory {
   @override
   Button createElevatedButton() {
