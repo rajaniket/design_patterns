@@ -21,7 +21,7 @@ By using these patterns, you make a system that's easy to understand, scale, and
 
 These patterns focus on creating objects.
 
-* ✅ [**Abstract Factory**]() : Helps create families of related objects without specifying their exact classes.
+* ✅ [**Abstract Factory**](creational/abstract_factory/) : Helps create families of related objects without specifying their exact classes.
 * ⬜️ [**Builder**]() : Makes it easier to create complex objects step by step.
 * ⬜️ [**Factory Method**]() : Simplifies creating objects by letting subclasses decide which class to instantiate.
 * ⬜️ [**Prototype**]() : Allows creating new objects by copying existing ones.
